@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2024 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/media_blocking_activity_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.android.car.apps.common.BackgroundImageView
+            android:id="@+id/blocking_activity_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout
+            android:id="@+id/blocking_activity_media_views_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/album_art"
+                android:layout_width="@dimen/blocking_activity_album_art_max_size"
+                android:layout_height="@dimen/blocking_activity_album_art_max_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/blocking_activity_default_horizontal_margin"
+                app:srcCompat="@drawable/ic_placeholder" />
+
+        <ImageView
+                android:id="@+id/media_widget_app_icon"
+                android:layout_width="@dimen/blocking_activity_app_icon_size"
+                android:layout_height="@dimen/blocking_activity_app_icon_size"
+                android:layout_above="@id/album_art"
+                android:layout_alignEnd="@id/album_art"
+                android:layout_marginEnd="@dimen/blocking_activity_app_icon_horizontal_margin"
+                android:layout_marginBottom="@dimen/blocking_activity_app_icon_vertical_margin"
+                android:background="@drawable/blocking_activity_app_icon_background"
+                android:clipToOutline="true"
+                android:scaleType="centerInside" />
+
+        <com.android.car.apps.common.UxrButton
+                android:id="@+id/blocking_activity_exit_button"
+                style="@style/BlockingActivityExitButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/blocking_activity_exit_button_height"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/blocking_activity_default_vertical_margin"
+                android:layout_marginStart="@dimen/blocking_activity_default_horizontal_margin"
+                android:text="@string/blocking_activity_exit_button"
+                app:carUxRestrictions="UX_RESTRICTIONS_FULLY_RESTRICTED" />
+
+        <LinearLayout
+                android:id="@+id/bottom_controls_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/album_art"
+                android:layout_marginStart="@dimen/blocking_activity_default_horizontal_margin"
+                android:layout_marginEnd="@dimen/blocking_activity_default_horizontal_margin"
+                android:layout_marginBottom="@dimen/blocking_activity_default_vertical_margin"
+                android:gravity="center_vertical">
+
+            <ImageButton
+                    android:id="@+id/play_pause_button"
+                    android:layout_width="@dimen/blocking_activity_play_pause_width"
+                    android:layout_height="@dimen/blocking_activity_play_pause_height"
+                    android:background="@drawable/blocking_activity_play_pause_background"
+                    app:srcCompat="@drawable/play_pause_button" />
+
+            <ImageButton
+                    android:id="@+id/playback_action_id1"
+                    android:layout_width="@dimen/blocking_activity_action_item_width"
+                    android:layout_height="@dimen/blocking_activity_action_item_height"
+                    android:layout_marginStart="@dimen/blocking_activity_action_item_horizontal_margin"
+                    android:background="@drawable/blocking_activity_action_item_background" />
+
+            <ImageButton
+                    android:id="@+id/playback_action_id2"
+                    android:layout_width="@dimen/blocking_activity_action_item_width"
+                    android:layout_height="@dimen/blocking_activity_action_item_height"
+                    android:layout_marginStart="@dimen/blocking_activity_action_item_horizontal_margin"
+                    android:background="@drawable/blocking_activity_action_item_background" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/BlockingActivityTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/album_art"
+                android:layout_below="@id/blocking_activity_exit_button"
+                android:layout_marginStart="@dimen/blocking_activity_default_horizontal_margin"
+                android:layout_marginEnd="@dimen/blocking_activity_default_horizontal_margin"
+                android:layout_marginTop="@dimen/blocking_activity_title_top_margin"
+                android:gravity="center_vertical" />
+
+        <TextView
+                android:id="@+id/subtitle"
+                style="@style/BlockingActivitySubtitleText"
+                android:layout_width="@dimen/blocking_activity_artist_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/album_art"
+                android:layout_marginStart="@dimen/blocking_activity_default_horizontal_margin"
+                android:layout_marginEnd="@dimen/blocking_activity_default_horizontal_margin"
+                android:layout_marginTop="@dimen/blocking_activity_subtitle_top_margin" />
+
+        <LinearLayout
+                android:id="@+id/seekbar_container_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/subtitle"
+                android:layout_above="@id/bottom_controls_bar"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/album_art"
+                android:layout_marginEnd="@dimen/blocking_activity_default_horizontal_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <SeekBar
+                    android:id="@+id/playback_seek_bar"
+                    style="@style/Widget.CarUi.SeekbarPreference.Seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/blocking_activity_seekbar_margin"
+                    android:progressBackgroundTint="@color/car_seekbar_background_color"
+                    android:progressDrawable="@drawable/blocking_activity_seekbar_progress"
+                    android:progressTint="@color/car_ui_color_accent"
+                    android:splitTrack="true"
+                    android:thumb="@drawable/blocking_activity_seekbar_thumb"
+                    android:thumbOffset="0px" />
+
+            <TextView
+                    android:id="@+id/current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:padding="@dimen/blocking_activity_time_text_padding" />
+
+            <TextView
+                    android:id="@+id/inner_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/blocking_activity_time_text_padding"
+                    android:text="@string/blocking_activity_time_separator"
+                    android:textColor="@color/car_grey_600" />
+
+            <TextView
+                    android:id="@+id/max_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="@dimen/blocking_activity_time_text_padding"
+                    android:textColor="@color/car_grey_600" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/blocking_activity_no_media_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/blocking_activity_no_media_text"
+            android:textAppearance="@style/TextAppearance.Display3"
+            android:visibility="visible" />
+
+</RelativeLayout>

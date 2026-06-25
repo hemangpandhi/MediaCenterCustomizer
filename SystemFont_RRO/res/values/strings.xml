@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_headlineFontFamily" translatable="false">@font/oem_custom_font_family</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">@font/oem_custom_font_family</string>
+    <string name="config_bodyFontFamily" translatable="false">@font/oem_custom_font_family</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">@font/oem_custom_font_family</string>
+</resources>

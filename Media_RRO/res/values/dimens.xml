@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<resources>
+    <item name="blocking_activity_album_art_corner_ratio" format="float" type="dimen">0.08</item>
+    <dimen name="blocking_activity_app_icon_vertical_margin">8dp</dimen>
+    <dimen name="blocking_activity_default_vertical_margin">@dimen/car_ui_padding_5</dimen>
+    <dimen name="blocking_activity_seekbar_margin">@dimen/car_ui_padding_4</dimen>
+    <dimen name="browse_fragment_bottom_padding">@dimen/minimized_control_bar_height</dimen>
+    <dimen name="browse_fragment_top_padding">@dimen/car_ui_toolbar_row_height</dimen>
+    <dimen name="browse_fragment_top_padding_stacked">@dimen/car_ui_toolbar_row_height</dimen>
+    <item name="media_background_alpha" format="float" type="dimen">0.78</item>
+    <dimen name="media_browse_list_icons_item_art_margin_start">@dimen/car_ui_padding_3</dimen>
+    <dimen name="media_browse_list_icons_item_text_margin_x">112dp</dimen>
+    <dimen name="media_browse_list_item_text_margin_x">148dp</dimen>
+    <dimen name="minimized_control_bar_margin_bottom">@dimen/car_ui_padding_3</dimen>
+    <dimen name="playback_seekbar_margin_x">@dimen/car_ui_margin</dimen>
+    <dimen name="queue_list_item_padding_x">@dimen/car_ui_padding_3</dimen>
+    <dimen name="queue_list_item_thumbnail_container_width">148dp</dimen>
+</resources>

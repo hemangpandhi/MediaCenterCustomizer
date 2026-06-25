@@ -1,0 +1,16 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "CarMediaCustomizer",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "androidx.preference_preference",
+    ],
+}

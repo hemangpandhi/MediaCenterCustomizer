@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<resources>
+    <bool name="hide_search_keyboard_on_scroll_state_dragging">true</bool>
+    <bool name="media_source_logo_opens_app_selector">false</bool>
+    <bool name="queue_fading_edge_length_enabled">true</bool>
+    <bool name="set_browse_list_focus_area_highlight_above_minimized_control_bar">true</bool>
+    <bool name="show_icon_for_now_playing_queue_list_item">false</bool>
+    <bool name="show_menu_item_selector">true</bool>
+    <bool name="show_mini_playback_controls">true</bool>
+    <bool name="show_persistent_tabs">false</bool>
+    <bool name="show_sound_settings">false</bool>
+    <bool name="show_subtitle_for_queue_list_item">true</bool>
+    <bool name="show_thumbnail_for_queue_list_item">true</bool>
+    <bool name="show_time_for_now_playing_queue_list_item">true</bool>
+    <bool name="switch_to_playback_view_when_playable_item_is_clicked">true</bool>
+    <bool name="use_media_source_color_for_progress_bar">true</bool>
+    <bool name="use_media_source_logo_for_app_selector_in_playback_view">false</bool>
+</resources>

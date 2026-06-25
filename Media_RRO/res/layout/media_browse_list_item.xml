@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2018, The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/media_browse_list_item_height"
+    android:paddingStart="@dimen/media_browse_list_item_icon_margin_start"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+    <com.android.car.media.common.FixedRatioImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="@dimen/media_browse_list_item_thumbnail_margin_bottom"
+        style="@style/MediaIconContainerStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:aspect_ratio="1"/>
+
+    <!-- This guideline is necessary because there are icons preceding the text which typically have
+      visibility GONE, which prevents margins applied to the leftmost view from applying to the
+      TextViews constrained to that chain -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/media_browse_list_item_text_margin_x"/>
+
+    <ImageView
+        android:id="@+id/download_icon_with_title"
+        android:layout_width="@dimen/media_browse_indicator_size"
+        android:layout_height="@dimen/media_browse_indicator_size"
+        android:src="@drawable/ic_file_download_done_black"
+        android:tint="@color/icon_tint"
+        app:layout_constraintStart_toEndOf="@+id/text_start_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/explicit_icon_with_title"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@+id/title"/>
+
+    <ImageView
+        android:id="@+id/explicit_icon_with_title"
+        android:layout_width="@dimen/media_browse_indicator_size"
+        android:layout_height="@dimen/media_browse_indicator_size"
+        android:src="@drawable/ic_explicit_black"
+        android:tint="@color/icon_tint"
+        app:layout_constraintStart_toEndOf="@+id/download_icon_with_title"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@+id/title"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BrowseListTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle"
+        app:layout_constraintStart_toEndOf="@+id/explicit_icon_with_title"
+        app:layout_constraintEnd_toStartOf="@+id/text_end_guideline"/>
+
+    <ImageView
+        android:id="@+id/download_icon_with_subtitle"
+        android:layout_width="@dimen/media_browse_indicator_size"
+        android:layout_height="@dimen/media_browse_indicator_size"
+        android:src="@drawable/ic_file_download_done_black"
+        android:tint="@color/icon_tint"
+        app:layout_constraintStart_toStartOf="@+id/download_icon_with_title"
+        app:layout_constraintEnd_toStartOf="@+id/explicit_icon_with_subtitle"
+        app:layout_constraintTop_toTopOf="@+id/subtitle"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitle"/>
+
+    <ImageView
+        android:id="@+id/explicit_icon_with_subtitle"
+        android:layout_width="@dimen/media_browse_indicator_size"
+        android:layout_height="@dimen/media_browse_indicator_size"
+        android:src="@drawable/ic_explicit_black"
+        android:tint="@color/icon_tint"
+        app:layout_constraintStart_toEndOf="@+id/download_icon_with_subtitle"
+        app:layout_constraintEnd_toStartOf="@+id/indicator_icons_container"
+        app:layout_constraintTop_toTopOf="@+id/subtitle"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitle"/>
+
+    <LinearLayout
+        android:id="@+id/indicator_icons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toEndOf="@+id/text_start_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@+id/browse_item_progress_bar"
+    />
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/BrowseListSubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@+id/browse_item_progress_bar"
+        app:layout_constraintStart_toEndOf="@+id/indicator_icons_container"
+        app:layout_constraintEnd_toStartOf="@+id/text_end_guideline"
+    />
+
+    <ProgressBar
+        android:id="@+id/browse_item_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/media_browse_progress_bar_height"
+        android:layout_marginBottom="@dimen/media_browse_progress_bar_bottom_list_margin"
+        android:layout_marginEnd="@dimen/media_browse_progress_bar_bottom_list_margin"
+        app:layout_constraintStart_toEndOf="@+id/explicit_icon_with_title"
+        app:layout_constraintEnd_toStartOf="@+id/text_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_end_guideline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/browse_item_progress_new"
+        android:src="@drawable/browser_progress_new_indicator"
+        android:layout_width="@dimen/media_browse_list_item_icons_size"
+        android:layout_height="@dimen/media_browse_list_item_icons_size"
+        android:layout_marginStart="@dimen/media_browse_list_item_icon_margin"
+        android:layout_marginEnd="@dimen/media_browse_list_item_icon_margin"
+        android:padding="@dimen/media_browse_list_item_icons_no_touch_padding"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/browse_item_actions_container"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/browse_item_actions_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_arrow"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        style="@style/BrowseListItemRightArrowStyle"
+        android:layout_width="@dimen/media_browse_list_item_icons_size"
+        android:layout_height="@dimen/media_browse_list_item_icons_size"
+        android:layout_marginTop="@dimen/media_browse_subtitle_margin_top"
+        android:layout_marginStart="@dimen/media_browse_list_item_icon_margin"
+        android:layout_marginEnd="@dimen/media_browse_list_item_icon_margin"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

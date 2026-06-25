@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<resources>
+    <color name="progress_bar_highlight">@color/media_source_default_color</color>
+</resources>

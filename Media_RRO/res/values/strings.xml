@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<resources xmlns:ns0="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="blocking_activity_exit_button">Exit Drive View</string>
+    <string name="blocking_activity_no_media_text">You can\u2019t use this feature while driving</string>
+    <string name="blocking_activity_time_separator">/</string>
+    <string name="browser_loading">Loading content…</string>
+    <string name="cannot_connect_to_app">
+        <ns0:g name="app">%s</ns0:g>
+         isn’t working right now.
+    </string>
+    <string name="config_BrowseViewHolderFactory_className" translatable="false">
+        com.android.car.media.browse.BrowseViewHolder$Factory
+    </string>
+    <string name="config_nowPlayingControllerBuilder_className" translatable="false">
+        com.android.car.media.NowPlayingController$Builder
+    </string>
+    <string name="audio_settings_action" translatable="false">
+        android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL
+    </string>
+    <string name="dash_separator" translatable="false">&quot; - &quot;</string>
+    <string name="fragment_playback_title">Now Playing</string>
+    <string name="media_app_title">Media</string>
+    <string name="media_browse_more">More…</string>
+    <string name="menu_item_app_selector_title">Switch apps</string>
+    <string name="menu_item_sound_settings_title">Sound Settings</string>
+    <string name="nothing_to_play">Media isn\'t available for this list</string>
+    <string name="playback_loading">@string/browser_loading</string>
+    <string name="search_hint">Search songs, artists, and more...</string>
+    <string name="service_notification_title">Connecting to media</string>
+    <string name="slash_separator" translatable="false">&quot; / &quot;</string>
+    <string name="unknown_error">Something went wrong</string>
+    <string name="unknown_media_provider_name">Unknown</string>
+</resources>

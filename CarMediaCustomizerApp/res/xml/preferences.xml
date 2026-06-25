@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Booleans (Includes Car UI)">
+        <SwitchPreferenceCompat app:key="bool/car_ui_alert_dialog_force_dismiss_button" app:title="car_ui_alert_dialog_force_dismiss_button" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_clear_focus_area_history_when_rotating" app:title="car_ui_clear_focus_area_history_when_rotating" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_enable_focus_area_background_highlight" app:title="car_ui_enable_focus_area_background_highlight" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_enable_focus_area_foreground_highlight" app:title="car_ui_enable_focus_area_foreground_highlight" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_escrow_check_components_automatically" app:title="car_ui_escrow_check_components_automatically" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_focus_area_default_focus_overrides_history" app:title="car_ui_focus_area_default_focus_overrides_history" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_ime_wide_screen_aligned_left" app:title="car_ui_ime_wide_screen_aligned_left" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_ime_wide_screen_allow_app_hide_content_area" app:title="car_ui_ime_wide_screen_allow_app_hide_content_area" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_is_light_theme" app:title="car_ui_is_light_theme" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_list_item_single_line_title" app:title="car_ui_list_item_single_line_title" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_omit_display_cut_out_insets" app:title="car_ui_omit_display_cut_out_insets" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_preference_list_instant_change_callback" app:title="car_ui_preference_list_instant_change_callback" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_preference_list_show_full_screen" app:title="car_ui_preference_list_show_full_screen" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_preference_show_chevron" app:title="car_ui_preference_show_chevron" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_preference_two_action_switch_widget_focusable" app:title="car_ui_preference_two_action_switch_widget_focusable" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_scrollbar_enable" app:title="car_ui_scrollbar_enable" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_logo_fills_nav_icon_space" app:title="car_ui_toolbar_logo_fills_nav_icon_space" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_menuitem_individual_click_listeners" app:title="car_ui_toolbar_menuitem_individual_click_listeners" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_nav_icon_reserve_space" app:title="car_ui_toolbar_nav_icon_reserve_space" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_show_logo" app:title="car_ui_toolbar_show_logo" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_tab_flexible_layout" app:title="car_ui_toolbar_tab_flexible_layout" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_tabs_on_second_row" app:title="car_ui_toolbar_tabs_on_second_row" />
+        <SwitchPreferenceCompat app:key="bool/hide_search_keyboard_on_scroll_state_dragging" app:title="hide_search_keyboard_on_scroll_state_dragging" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/media_source_logo_opens_app_selector" app:title="media_source_logo_opens_app_selector" app:defaultValue="false" />
+        <SwitchPreferenceCompat app:key="bool/queue_fading_edge_length_enabled" app:title="queue_fading_edge_length_enabled" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/set_browse_list_focus_area_highlight_above_minimized_control_bar" app:title="set_browse_list_focus_area_highlight_above_minimized_control_bar" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/show_icon_for_now_playing_queue_list_item" app:title="show_icon_for_now_playing_queue_list_item" app:defaultValue="false" />
+        <SwitchPreferenceCompat app:key="bool/show_menu_item_selector" app:title="show_menu_item_selector" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/show_mini_playback_controls" app:title="show_mini_playback_controls" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/show_persistent_tabs" app:title="show_persistent_tabs" app:defaultValue="false" />
+        <SwitchPreferenceCompat app:key="bool/show_sound_settings" app:title="show_sound_settings" app:defaultValue="false" />
+        <SwitchPreferenceCompat app:key="bool/show_subtitle_for_queue_list_item" app:title="show_subtitle_for_queue_list_item" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/show_thumbnail_for_queue_list_item" app:title="show_thumbnail_for_queue_list_item" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/show_time_for_now_playing_queue_list_item" app:title="show_time_for_now_playing_queue_list_item" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/switch_to_playback_view_when_playable_item_is_clicked" app:title="switch_to_playback_view_when_playable_item_is_clicked" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/use_media_source_color_for_progress_bar" app:title="use_media_source_color_for_progress_bar" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/use_media_source_logo_for_app_selector_in_playback_view" app:title="use_media_source_logo_for_app_selector_in_playback_view" app:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Colors (Includes Car UI)">
+        <EditTextPreference app:key="color/car_ui_activity_background_color" app:title="car_ui_activity_background_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_app_styled_view_nav_icon_color" app:title="car_ui_app_styled_view_nav_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_color_accent" app:title="car_ui_color_accent" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_dialog_icon_color" app:title="car_ui_dialog_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ime_wide_screen_description_color" app:title="car_ui_ime_wide_screen_description_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ime_wide_screen_description_title_color" app:title="car_ui_ime_wide_screen_description_title_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ime_wide_screen_divider_color" app:title="car_ui_ime_wide_screen_divider_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ime_wide_screen_error_text_color" app:title="car_ui_ime_wide_screen_error_text_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ime_wide_screen_search_item_sub_title_color" app:title="car_ui_ime_wide_screen_search_item_sub_title_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ime_wide_screen_search_item_title_color" app:title="car_ui_ime_wide_screen_search_item_title_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_list_item_divider" app:title="car_ui_list_item_divider" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_preference_icon_color" app:title="car_ui_preference_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_preference_primary_switch_background_color" app:title="car_ui_preference_primary_switch_background_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_preference_two_action_divider_color" app:title="car_ui_preference_two_action_divider_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_recyclerview_divider_color" app:title="car_ui_recyclerview_divider_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_ripple_color" app:title="car_ui_ripple_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_fill_color" app:title="car_ui_rotary_focus_fill_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_fill_secondary_color" app:title="car_ui_rotary_focus_fill_secondary_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_pressed_fill_color" app:title="car_ui_rotary_focus_pressed_fill_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_pressed_fill_secondary_color" app:title="car_ui_rotary_focus_pressed_fill_secondary_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_pressed_stroke_color" app:title="car_ui_rotary_focus_pressed_stroke_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_pressed_stroke_secondary_color" app:title="car_ui_rotary_focus_pressed_stroke_secondary_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_stroke_color" app:title="car_ui_rotary_focus_stroke_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_rotary_focus_stroke_secondary_color" app:title="car_ui_rotary_focus_stroke_secondary_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_scrollbar_arrow" app:title="car_ui_scrollbar_arrow" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_scrollbar_thumb" app:title="car_ui_scrollbar_thumb" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_shortcuts_arrow_color" app:title="car_ui_shortcuts_arrow_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_shortcuts_item_text_color" app:title="car_ui_shortcuts_item_text_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_text_color_hint" app:title="car_ui_text_color_hint" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_text_color_primary" app:title="car_ui_text_color_primary" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_text_color_secondary" app:title="car_ui_text_color_secondary" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_menu_item_icon_background_color" app:title="car_ui_toolbar_menu_item_icon_background_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_menu_item_icon_color" app:title="car_ui_toolbar_menu_item_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_nav_icon_color" app:title="car_ui_toolbar_nav_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_search_hint_text_color" app:title="car_ui_toolbar_search_hint_text_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_tab_item_selector" app:title="car_ui_toolbar_tab_item_selector" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_tab_selected_color" app:title="car_ui_toolbar_tab_selected_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_toolbar_tab_unselected_color" app:title="car_ui_toolbar_tab_unselected_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/progress_bar_highlight" app:title="progress_bar_highlight" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Dimensions (Includes Car UI)">
+        <EditTextPreference app:key="dimen/blocking_activity_album_art_corner_ratio" app:title="blocking_activity_album_art_corner_ratio" app:defaultValue="0.08" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/blocking_activity_app_icon_vertical_margin" app:title="blocking_activity_app_icon_vertical_margin" app:defaultValue="8" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/blocking_activity_default_vertical_margin" app:title="blocking_activity_default_vertical_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/blocking_activity_seekbar_margin" app:title="blocking_activity_seekbar_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/browse_fragment_bottom_padding" app:title="browse_fragment_bottom_padding" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/browse_fragment_top_padding" app:title="browse_fragment_top_padding" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/browse_fragment_top_padding_stacked" app:title="browse_fragment_top_padding_stacked" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_dim_amount" app:title="car_ui_app_styled_dialog_dim_amount" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_height" app:title="car_ui_app_styled_dialog_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_height_max" app:title="car_ui_app_styled_dialog_height_max" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_position_x" app:title="car_ui_app_styled_dialog_position_x" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_position_y" app:title="car_ui_app_styled_dialog_position_y" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_width" app:title="car_ui_app_styled_dialog_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_app_styled_dialog_width_max" app:title="car_ui_app_styled_dialog_width_max" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_body1_size" app:title="car_ui_body1_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_body2_size" app:title="car_ui_body2_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_body3_size" app:title="car_ui_body3_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_button_disabled_alpha" app:title="car_ui_button_disabled_alpha" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_edittext_height" app:title="car_ui_dialog_edittext_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_edittext_margin_bottom" app:title="car_ui_dialog_edittext_margin_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_edittext_margin_end" app:title="car_ui_dialog_edittext_margin_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_edittext_margin_start" app:title="car_ui_dialog_edittext_margin_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_edittext_margin_top" app:title="car_ui_dialog_edittext_margin_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_icon_size" app:title="car_ui_dialog_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_dialog_title_margin" app:title="car_ui_dialog_title_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_divider_width" app:title="car_ui_divider_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_footer_icon_alpha" app:title="car_ui_footer_icon_alpha" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_footer_icon_padding" app:title="car_ui_footer_icon_padding" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_footer_icon_size" app:title="car_ui_footer_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_header_list_item_text_start_margin" app:title="car_ui_header_list_item_text_start_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_action_button_height" app:title="car_ui_ime_wide_screen_action_button_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_action_button_margin_bottom" app:title="car_ui_ime_wide_screen_action_button_margin_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_action_button_margin_left" app:title="car_ui_ime_wide_screen_action_button_margin_left" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_action_button_text_size" app:title="car_ui_ime_wide_screen_action_button_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_description_padding_top" app:title="car_ui_ime_wide_screen_description_padding_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_description_text_size" app:title="car_ui_ime_wide_screen_description_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_description_title_margin_top" app:title="car_ui_ime_wide_screen_description_title_margin_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_description_title_padding_left" app:title="car_ui_ime_wide_screen_description_title_padding_left" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_description_title_text_size" app:title="car_ui_ime_wide_screen_description_title_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_divider_width" app:title="car_ui_ime_wide_screen_divider_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_error_text_padding_start" app:title="car_ui_ime_wide_screen_error_text_padding_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_error_text_size" app:title="car_ui_ime_wide_screen_error_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_area_height" app:title="car_ui_ime_wide_screen_input_area_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_area_padding_end" app:title="car_ui_ime_wide_screen_input_area_padding_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_area_padding_top" app:title="car_ui_ime_wide_screen_input_area_padding_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_edit_text_padding_left" app:title="car_ui_ime_wide_screen_input_edit_text_padding_left" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_edit_text_padding_right" app:title="car_ui_ime_wide_screen_input_edit_text_padding_right" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_edit_text_size" app:title="car_ui_ime_wide_screen_input_edit_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_input_padding_start" app:title="car_ui_ime_wide_screen_input_padding_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_keyboard_area_padding_bottom" app:title="car_ui_ime_wide_screen_keyboard_area_padding_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_keyboard_area_padding_end" app:title="car_ui_ime_wide_screen_keyboard_area_padding_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_keyboard_area_padding_start" app:title="car_ui_ime_wide_screen_keyboard_area_padding_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_keyboard_width" app:title="car_ui_ime_wide_screen_keyboard_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_screen_recycler_view_padding_top" app:title="car_ui_ime_wide_screen_recycler_view_padding_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_icon_size" app:title="car_ui_ime_wide_search_item_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_secondary_image_padding_left" app:title="car_ui_ime_wide_search_item_secondary_image_padding_left" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_sub_title_padding_left" app:title="car_ui_ime_wide_search_item_sub_title_padding_left" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_sub_title_padding_top" app:title="car_ui_ime_wide_search_item_sub_title_padding_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_sub_title_text_size" app:title="car_ui_ime_wide_search_item_sub_title_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_title_padding_left" app:title="car_ui_ime_wide_search_item_title_padding_left" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_title_padding_top" app:title="car_ui_ime_wide_search_item_title_padding_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_ime_wide_search_item_title_text_size" app:title="car_ui_ime_wide_search_item_title_text_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_action_divider_height" app:title="car_ui_list_item_action_divider_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_action_divider_width" app:title="car_ui_list_item_action_divider_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_avatar_icon_height" app:title="car_ui_list_item_avatar_icon_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_avatar_icon_width" app:title="car_ui_list_item_avatar_icon_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_check_box_end_inset" app:title="car_ui_list_item_check_box_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_check_box_height" app:title="car_ui_list_item_check_box_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_check_box_icon_container_width" app:title="car_ui_list_item_check_box_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_check_box_start_inset" app:title="car_ui_list_item_check_box_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_content_icon_height" app:title="car_ui_list_item_content_icon_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_content_icon_width" app:title="car_ui_list_item_content_icon_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_end_inset" app:title="car_ui_list_item_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_header_height" app:title="car_ui_list_item_header_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_header_start_inset" app:title="car_ui_list_item_header_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_height" app:title="car_ui_list_item_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_icon_container_width" app:title="car_ui_list_item_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_icon_size" app:title="car_ui_list_item_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_radio_button_end_inset" app:title="car_ui_list_item_radio_button_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_radio_button_height" app:title="car_ui_list_item_radio_button_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_radio_button_icon_container_width" app:title="car_ui_list_item_radio_button_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_radio_button_start_inset" app:title="car_ui_list_item_radio_button_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_start_inset" app:title="car_ui_list_item_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_supplemental_icon_size" app:title="car_ui_list_item_supplemental_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_text_no_icon_start_margin" app:title="car_ui_list_item_text_no_icon_start_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_text_start_margin" app:title="car_ui_list_item_text_start_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_margin" app:title="car_ui_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_0" app:title="car_ui_padding_0" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_1" app:title="car_ui_padding_1" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_2" app:title="car_ui_padding_2" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_3" app:title="car_ui_padding_3" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_4" app:title="car_ui_padding_4" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_5" app:title="car_ui_padding_5" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_6" app:title="car_ui_padding_6" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_7" app:title="car_ui_padding_7" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_padding_8" app:title="car_ui_padding_8" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_category_icon_margin_end" app:title="car_ui_preference_category_icon_margin_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_category_icon_size" app:title="car_ui_preference_category_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_category_min_height" app:title="car_ui_preference_category_min_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_content_margin_bottom" app:title="car_ui_preference_content_margin_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_content_margin_top" app:title="car_ui_preference_content_margin_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_dropdown_padding_start" app:title="car_ui_preference_dropdown_padding_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_margin_bottom" app:title="car_ui_preference_edit_text_dialog_margin_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_margin_top" app:title="car_ui_preference_edit_text_dialog_margin_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_message_margin_bottom" app:title="car_ui_preference_edit_text_dialog_message_margin_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_message_margin_end" app:title="car_ui_preference_edit_text_dialog_message_margin_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_message_margin_start" app:title="car_ui_preference_edit_text_dialog_message_margin_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_text_margin_end" app:title="car_ui_preference_edit_text_dialog_text_margin_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_edit_text_dialog_text_margin_start" app:title="car_ui_preference_edit_text_dialog_text_margin_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_icon_margin_end" app:title="car_ui_preference_icon_margin_end" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_preference_icon_size" app:title="car_ui_preference_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_primary_icon_size" app:title="car_ui_primary_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_recyclerview_divider_bottom_margin" app:title="car_ui_recyclerview_divider_bottom_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_recyclerview_divider_end_margin" app:title="car_ui_recyclerview_divider_end_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_recyclerview_divider_height" app:title="car_ui_recyclerview_divider_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_recyclerview_divider_start_margin" app:title="car_ui_recyclerview_divider_start_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_recyclerview_divider_top_margin" app:title="car_ui_recyclerview_divider_top_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_rotary_focus_pressed_stroke_width" app:title="car_ui_rotary_focus_pressed_stroke_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_rotary_focus_stroke_width" app:title="car_ui_rotary_focus_stroke_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_button_size" app:title="car_ui_scrollbar_button_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_container_width" app:title="car_ui_scrollbar_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_decelerate_interpolator_factor" app:title="car_ui_scrollbar_decelerate_interpolator_factor" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_deceleration_times_divisor" app:title="car_ui_scrollbar_deceleration_times_divisor" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_margin" app:title="car_ui_scrollbar_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_milliseconds_per_inch" app:title="car_ui_scrollbar_milliseconds_per_inch" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_min_thumb_height" app:title="car_ui_scrollbar_min_thumb_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_padding_bottom" app:title="car_ui_scrollbar_padding_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_padding_top" app:title="car_ui_scrollbar_padding_top" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_separator_margin" app:title="car_ui_scrollbar_separator_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_thumb_radius" app:title="car_ui_scrollbar_thumb_radius" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_scrollbar_thumb_width" app:title="car_ui_scrollbar_thumb_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_shortcuts_popup_width" app:title="car_ui_shortcuts_popup_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_sub1_size" app:title="car_ui_sub1_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_sub2_size" app:title="car_ui_sub2_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_sub3_size" app:title="car_ui_sub3_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_bottom_inset" app:title="car_ui_toolbar_bottom_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_bottom_view_height" app:title="car_ui_toolbar_bottom_view_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_end_inset" app:title="car_ui_toolbar_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_first_row_height" app:title="car_ui_toolbar_first_row_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_logo_size" app:title="car_ui_toolbar_logo_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_margin" app:title="car_ui_toolbar_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_menu_item_icon_background_size" app:title="car_ui_toolbar_menu_item_icon_background_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_menu_item_icon_ripple_radius" app:title="car_ui_toolbar_menu_item_icon_ripple_radius" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_menu_item_icon_size" app:title="car_ui_toolbar_menu_item_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_menu_item_margin" app:title="car_ui_toolbar_menu_item_margin" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_nav_icon_size" app:title="car_ui_toolbar_nav_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_row_height" app:title="car_ui_toolbar_row_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_search_close_icon_container_width" app:title="car_ui_toolbar_search_close_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_search_close_icon_size" app:title="car_ui_toolbar_search_close_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_search_height" app:title="car_ui_toolbar_search_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_search_search_icon_container_width" app:title="car_ui_toolbar_search_search_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_search_search_icon_size" app:title="car_ui_toolbar_search_search_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_second_row_height" app:title="car_ui_toolbar_second_row_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_separator_height" app:title="car_ui_toolbar_separator_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_start_inset" app:title="car_ui_toolbar_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_tab_icon_height" app:title="car_ui_toolbar_tab_icon_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_tab_icon_width" app:title="car_ui_toolbar_tab_icon_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_tab_padding_x" app:title="car_ui_toolbar_tab_padding_x" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_tab_text_width" app:title="car_ui_toolbar_tab_text_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_title_logo_padding" app:title="car_ui_toolbar_title_logo_padding" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_title_margin_start" app:title="car_ui_toolbar_title_margin_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_title_no_logo_margin_start" app:title="car_ui_toolbar_title_no_logo_margin_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_toolbar_top_inset" app:title="car_ui_toolbar_top_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_touch_target_height" app:title="car_ui_touch_target_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_touch_target_size" app:title="car_ui_touch_target_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_touch_target_width" app:title="car_ui_touch_target_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/media_background_alpha" app:title="media_background_alpha" app:defaultValue="0.78" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/media_browse_list_icons_item_art_margin_start" app:title="media_browse_list_icons_item_art_margin_start" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/media_browse_list_icons_item_text_margin_x" app:title="media_browse_list_icons_item_text_margin_x" app:defaultValue="112" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/media_browse_list_item_text_margin_x" app:title="media_browse_list_item_text_margin_x" app:defaultValue="148" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/minimized_control_bar_margin_bottom" app:title="minimized_control_bar_margin_bottom" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/playback_seekbar_margin_x" app:title="playback_seekbar_margin_x" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/queue_list_item_padding_x" app:title="queue_list_item_padding_x" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/queue_list_item_thumbnail_container_width" app:title="queue_list_item_thumbnail_container_width" app:defaultValue="148" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Integers (Includes Car UI)">
+        <EditTextPreference app:key="integer/blocking_activity_relaunch_time_ms" app:title="blocking_activity_relaunch_time_ms" app:defaultValue="250" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_default_max_string_length" app:title="car_ui_default_max_string_length" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_focus_area_history_cache_type" app:title="car_ui_focus_area_history_cache_type" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_focus_area_history_expiration_period_ms" app:title="car_ui_focus_area_history_expiration_period_ms" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_focus_history_cache_type" app:title="car_ui_focus_history_cache_type" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_focus_history_expiration_period_ms" app:title="car_ui_focus_history_expiration_period_ms" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_scrollbar_longpress_initial_delay" app:title="car_ui_scrollbar_longpress_initial_delay" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_scrollbar_longpress_repeat_interval" app:title="car_ui_scrollbar_longpress_repeat_interval" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/car_ui_touch_mode_skip_restore_focus_ms" app:title="car_ui_touch_mode_skip_restore_focus_ms" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/fragment_playback_queue_fade_duration_ms" app:title="fragment_playback_queue_fade_duration_ms" app:defaultValue="500" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/max_tabs" app:title="max_tabs" app:defaultValue="4" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/max_visible_actions" app:title="max_visible_actions" app:defaultValue="1" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/max_visible_actions_header" app:title="max_visible_actions_header" app:defaultValue="2" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/media_artist_max_lines" app:title="media_artist_max_lines" app:defaultValue="1" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/media_title_max_lines" app:title="media_title_max_lines" app:defaultValue="2" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/num_app_bar_view_rows" app:title="num_app_bar_view_rows" app:defaultValue="1" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/num_browse_columns" app:title="num_browse_columns" app:defaultValue="3" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/progress_indicator_delay" app:title="progress_indicator_delay" app:defaultValue="1000" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="integer/task_description_icon_pixels" app:title="task_description_icon_pixels" app:defaultValue="256" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Strings (Includes Car UI)">
+        <EditTextPreference app:key="string/audio_settings_action" app:title="audio_settings_action" app:defaultValue="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/blocking_activity_exit_button" app:title="blocking_activity_exit_button" app:defaultValue="Exit Drive View" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/blocking_activity_no_media_text" app:title="blocking_activity_no_media_text" app:defaultValue="You can\u2019t use this feature while driving" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/blocking_activity_time_separator" app:title="blocking_activity_time_separator" app:defaultValue="/" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/browser_loading" app:title="browser_loading" app:defaultValue="Loading content…" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/cannot_connect_to_app" app:title="cannot_connect_to_app" app:defaultValue="%s
+         isn’t working right now." app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_alert_dialog_default_button" app:title="car_ui_alert_dialog_default_button" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_dialog_preference_negative" app:title="car_ui_dialog_preference_negative" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_dialog_preference_positive" app:title="car_ui_dialog_preference_positive" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_ellipsis" app:title="car_ui_ellipsis" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_ime_wide_screen_system_property_name" app:title="car_ui_ime_wide_screen_system_property_name" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_installer_process_name" app:title="car_ui_installer_process_name" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_plugin_package_provider_authority_name" app:title="car_ui_plugin_package_provider_authority_name" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_preference_switch_off" app:title="car_ui_preference_switch_off" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_preference_switch_on" app:title="car_ui_preference_switch_on" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_restricted_while_driving" app:title="car_ui_restricted_while_driving" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_scrollbar_component" app:title="car_ui_scrollbar_component" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_scrollbar_page_down_button" app:title="car_ui_scrollbar_page_down_button" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_scrollbar_page_up_button" app:title="car_ui_scrollbar_page_up_button" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_scrolling_limited_message" app:title="car_ui_scrolling_limited_message" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_toolbar_default_search_hint" app:title="car_ui_toolbar_default_search_hint" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_toolbar_menu_item_overflow_title" app:title="car_ui_toolbar_menu_item_overflow_title" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_toolbar_menu_item_search_title" app:title="car_ui_toolbar_menu_item_search_title" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_toolbar_menu_item_settings_title" app:title="car_ui_toolbar_menu_item_settings_title" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/car_ui_toolbar_nav_icon_content_description" app:title="car_ui_toolbar_nav_icon_content_description" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/config_BrowseViewHolderFactory_className" app:title="config_BrowseViewHolderFactory_className" app:defaultValue="com.android.car.media.browse.BrowseViewHolder$Factory" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/config_nowPlayingControllerBuilder_className" app:title="config_nowPlayingControllerBuilder_className" app:defaultValue="com.android.car.media.NowPlayingController$Builder" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/dash_separator" app:title="dash_separator" app:defaultValue="&quot; - &quot;" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/fragment_playback_title" app:title="fragment_playback_title" app:defaultValue="Now Playing" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/media_app_title" app:title="media_app_title" app:defaultValue="Media" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/media_browse_more" app:title="media_browse_more" app:defaultValue="More…" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/menu_item_app_selector_title" app:title="menu_item_app_selector_title" app:defaultValue="Switch apps" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/menu_item_sound_settings_title" app:title="menu_item_sound_settings_title" app:defaultValue="Sound Settings" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/nothing_to_play" app:title="nothing_to_play" app:defaultValue="Media isn\'t available for this list" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/playback_loading" app:title="playback_loading" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/search_hint" app:title="search_hint" app:defaultValue="Search songs, artists, and more..." app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/service_notification_title" app:title="service_notification_title" app:defaultValue="Connecting to media" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/slash_separator" app:title="slash_separator" app:defaultValue="&quot; / &quot;" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/unknown_error" app:title="unknown_error" app:defaultValue="Something went wrong" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="string/unknown_media_provider_name" app:title="unknown_media_provider_name" app:defaultValue="Unknown" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

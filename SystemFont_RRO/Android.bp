@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "SystemFont_RRO",
+    theme: "SystemFont_RRO",
+    sdk_version: "current",
+    product_specific: true,
+}

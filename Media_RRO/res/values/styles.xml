@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<resources>
+    <style name="BlockingActivityExitButtonStyle" parent="FullScreenErrorButtonStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/blocking_activity_exit_button_background</item>
+        <item name="android:textColor">@color/blocking_activity_exit_button_text</item>
+    </style>
+    <style name="BlockingActivitySubtitleText">
+        <item name="android:fontFamily">@style/TextAppearance.Body2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="BlockingActivityTitleText">
+        <item name="android:textAppearance">@style/TextAppearance.Display2</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="BrowseGridSubtitleStyle" parent="TextAppearance.Body3">
+        <item name="android:textColor">@color/secondary_text_color</item>
+    </style>
+    <style name="BrowseGridTitleStyle" parent="TextAppearance.Body2"/>
+    <style name="BrowseListItemRightArrowStyle">
+        <item name="android:src">@drawable/ic_chevron_right</item>
+    </style>
+    <style name="BrowseListSubtitleStyle" parent="TextAppearance.Body3">
+        <item name="android:textColor">@color/secondary_text_color</item>
+    </style>
+    <style name="BrowseListTitleStyle" parent="TextAppearance.Body1"/>
+    <style name="BrowseSubheaderStyle" parent="TextAppearance.Body3">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="ErrorTextStyle" parent="TextAppearance.Body1"/>
+    <style name="MediaIconContainerStyle"/>
+    <style name="MediaTintableIconContainerStyle" parent="MediaIconContainerStyle">
+        <item name="android:tint">@color/browse_icon_tint</item>
+    </style>
+    <style name="MetadataContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">@dimen/fragment_metadata_margin_x</item>
+    </style>
+    <style name="MetadataPlaybackContentLogo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/playback_content_format_height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="logoTint">@color/secondary_text_color</item>
+        <item name="logoSize">large</item>
+    </style>
+    <style name="MetadataPlaybackLoadingStyle" parent="TextAppearance.Display2"/>
+    <style name="MetadataPlaybackSeparatorStyle" parent="MetadataPlaybackSubtitleStyle">
+        <item name="android:layout_marginHorizontal">4dp</item>
+    </style>
+    <style name="MetadataPlaybackSubtitleClickableStyle" parent="MetadataPlaybackSubtitleStyle">
+    </style>
+    <style name="MetadataPlaybackSubtitleStyle" parent="TextAppearance.Body1">
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="MetadataPlaybackTitleStyle" parent="TextAppearance.Display2">
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lineSpacingExtra">@dimen/car_ui_padding_1</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="QueueListItemSubtitleStyle" parent="TextAppearance.Body3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+    </style>
+    <style name="QueueListItemTimeStyle" parent="TextAppearance.Body3">
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="QueueListItemTitleStyle" parent="TextAppearance.Body1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="QueueListItemTitlesContainerStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="SeekBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/playback_seekbar_height</item>
+    </style>
+    <style name="TextAppearance.NoContent" parent="android:TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/car_ui_body3_size</item>
+        <item name="android:textColor">@color/no_content_text_color</item>
+    </style>
+    <style name="Theme.Media" parent="Theme.CarUi">
+        <item name="textAppearanceGridItem">@android:style/TextAppearance.DeviceDefault.Medium</item>
+        <item name="textAppearanceGridItemSecondary">@android:style/TextAppearance.DeviceDefault.Small</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="oemTokenOverrideEnabled">true</item>
+    </style>
+    <style name="ToastErrorIconStyle"/>
+    <style name="ToastErrorTextStyle"/>
+</resources>

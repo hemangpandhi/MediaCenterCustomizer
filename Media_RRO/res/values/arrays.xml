@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<resources>
+    <integer-array name="playback_views_to_hide_immediately_when_queue_is_visible"/>
+    <integer-array name="playback_views_to_hide_when_queue_is_visible">
+        <item>@id/metadata_container</item>
+        <item>@id/playback_seek_bar_container</item>
+    </integer-array>
+    <integer-array name="playback_views_to_hide_when_showing_custom_actions">
+        <item>@id/playback_seek_bar_container</item>
+    </integer-array>
+    <integer-array name="playback_views_to_show_immediately_when_queue_is_visible"/>
+    <integer-array name="playback_views_to_show_when_queue_is_visible">
+        <item>@id/queue_fragment_container</item>
+        <item>@id/background_scrim</item>
+    </integer-array>
+</resources>
