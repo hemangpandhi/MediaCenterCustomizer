@@ -110,6 +110,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
                 if (hasVisible) groupHasVisibleChild = true;
             } else {
                 boolean match = false;
+                if (pref.getKey() != null && pref.getKey().toLowerCase().contains(query)) {
+                    match = true;
+                }
                 if (pref.getTitle() != null && pref.getTitle().toString().toLowerCase().contains(query)) {
                     match = true;
                 }
