@@ -16,7 +16,7 @@
         <SwitchPreferenceCompat app:key="bool/car_ui_preference_list_show_full_screen" app:title="car_ui_preference_list_show_full_screen" />
         <SwitchPreferenceCompat app:key="bool/car_ui_preference_show_chevron" app:title="car_ui_preference_show_chevron" />
         <SwitchPreferenceCompat app:key="bool/car_ui_preference_two_action_switch_widget_focusable" app:title="car_ui_preference_two_action_switch_widget_focusable" />
-        <SwitchPreferenceCompat app:key="bool/car_ui_scrollbar_enable" app:title="car_ui_scrollbar_enable" />
+        <SwitchPreferenceCompat app:key="bool/car_ui_scrollbar_enable" app:title="car_ui_scrollbar_enable" app:summary="Toggle the visibility of the side scrollbar in lists." />
         <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_logo_fills_nav_icon_space" app:title="car_ui_toolbar_logo_fills_nav_icon_space" />
         <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_menuitem_individual_click_listeners" app:title="car_ui_toolbar_menuitem_individual_click_listeners" />
         <SwitchPreferenceCompat app:key="bool/car_ui_toolbar_nav_icon_reserve_space" app:title="car_ui_toolbar_nav_icon_reserve_space" />
@@ -27,22 +27,22 @@
         <SwitchPreferenceCompat app:key="bool/media_source_logo_opens_app_selector" app:title="media_source_logo_opens_app_selector" app:defaultValue="false" />
         <SwitchPreferenceCompat app:key="bool/queue_fading_edge_length_enabled" app:title="queue_fading_edge_length_enabled" app:defaultValue="true" />
         <SwitchPreferenceCompat app:key="bool/set_browse_list_focus_area_highlight_above_minimized_control_bar" app:title="set_browse_list_focus_area_highlight_above_minimized_control_bar" app:defaultValue="true" />
-        <SwitchPreferenceCompat app:key="bool/show_icon_for_now_playing_queue_list_item" app:title="show_icon_for_now_playing_queue_list_item" app:defaultValue="false" />
+        <SwitchPreferenceCompat app:key="bool/show_icon_for_now_playing_queue_list_item" app:title="show_icon_for_now_playing_queue_list_item" app:defaultValue="false" app:summary="Show or hide the album art thumbnail in the song list." />
         <SwitchPreferenceCompat app:key="bool/show_menu_item_selector" app:title="show_menu_item_selector" app:defaultValue="true" />
         <SwitchPreferenceCompat app:key="bool/show_mini_playback_controls" app:title="show_mini_playback_controls" app:defaultValue="true" />
         <SwitchPreferenceCompat app:key="bool/show_persistent_tabs" app:title="show_persistent_tabs" app:defaultValue="false" />
         <SwitchPreferenceCompat app:key="bool/show_sound_settings" app:title="show_sound_settings" app:defaultValue="false" />
         <SwitchPreferenceCompat app:key="bool/show_subtitle_for_queue_list_item" app:title="show_subtitle_for_queue_list_item" app:defaultValue="true" />
         <SwitchPreferenceCompat app:key="bool/show_thumbnail_for_queue_list_item" app:title="show_thumbnail_for_queue_list_item" app:defaultValue="true" />
-        <SwitchPreferenceCompat app:key="bool/show_time_for_now_playing_queue_list_item" app:title="show_time_for_now_playing_queue_list_item" app:defaultValue="true" />
+        <SwitchPreferenceCompat app:key="bool/show_time_for_now_playing_queue_list_item" app:title="show_time_for_now_playing_queue_list_item" app:defaultValue="true" app:summary="Show or hide the track duration time on the right side of the queue." />
         <SwitchPreferenceCompat app:key="bool/switch_to_playback_view_when_playable_item_is_clicked" app:title="switch_to_playback_view_when_playable_item_is_clicked" app:defaultValue="true" />
         <SwitchPreferenceCompat app:key="bool/use_media_source_color_for_progress_bar" app:title="use_media_source_color_for_progress_bar" app:defaultValue="true" />
         <SwitchPreferenceCompat app:key="bool/use_media_source_logo_for_app_selector_in_playback_view" app:title="use_media_source_logo_for_app_selector_in_playback_view" app:defaultValue="false" />
     </PreferenceCategory>
     <PreferenceCategory app:title="Colors (Includes Car UI)">
-        <EditTextPreference app:key="color/car_ui_activity_background_color" app:title="car_ui_activity_background_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_activity_background_color" app:title="car_ui_activity_background_color" app:defaultValue="" app:summary="The main background color of the Media App." />
         <EditTextPreference app:key="color/car_ui_app_styled_view_nav_icon_color" app:title="car_ui_app_styled_view_nav_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
-        <EditTextPreference app:key="color/car_ui_color_accent" app:title="car_ui_color_accent" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="color/car_ui_color_accent" app:title="car_ui_color_accent" app:defaultValue="" app:summary="The primary accent color for active tabs, selected items, and progress bars." />
         <EditTextPreference app:key="color/car_ui_dialog_icon_color" app:title="car_ui_dialog_icon_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="color/car_ui_ime_wide_screen_description_color" app:title="car_ui_ime_wide_screen_description_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="color/car_ui_ime_wide_screen_description_title_color" app:title="car_ui_ime_wide_screen_description_title_color" app:defaultValue="" app:useSimpleSummaryProvider="true" />
@@ -156,7 +156,7 @@
         <EditTextPreference app:key="dimen/car_ui_list_item_end_inset" app:title="car_ui_list_item_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_header_height" app:title="car_ui_list_item_header_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_header_start_inset" app:title="car_ui_list_item_header_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
-        <EditTextPreference app:key="dimen/car_ui_list_item_height" app:title="car_ui_list_item_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="dimen/car_ui_list_item_height" app:title="car_ui_list_item_height" app:defaultValue="" app:summary="Controls the height of each song/list item. Decrease this value (e.g., to 70-80dp) to fit 7 songs on the screen instead of 5." />
         <EditTextPreference app:key="dimen/car_ui_list_item_icon_container_width" app:title="car_ui_list_item_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_icon_size" app:title="car_ui_list_item_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_radio_button_end_inset" app:title="car_ui_list_item_radio_button_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
