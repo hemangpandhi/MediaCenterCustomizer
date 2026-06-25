@@ -156,7 +156,9 @@
         <EditTextPreference app:key="dimen/car_ui_list_item_end_inset" app:title="car_ui_list_item_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_header_height" app:title="car_ui_list_item_header_height" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_header_start_inset" app:title="car_ui_list_item_header_start_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
-        <EditTextPreference app:key="dimen/car_ui_list_item_height" app:title="car_ui_list_item_height" app:defaultValue="" app:summary="Controls the height of each song/list item. Decrease this value (e.g., to 70-80dp) to fit 7 songs on the screen instead of 5." />
+        <EditTextPreference app:key="dimen/car_ui_list_item_height" app:title="car_ui_list_item_height" app:defaultValue="" app:summary="Controls generic system list item heights. Does NOT affect songs in the media app." />
+        <EditTextPreference app:key="dimen/queue_list_item_height" app:title="queue_list_item_height" app:defaultValue="104" app:summary="Controls the height of songs in the Now Playing Queue. Decrease to fit 7+ songs." />
+        <EditTextPreference app:key="dimen/media_browse_list_item_height" app:title="media_browse_list_item_height" app:defaultValue="104" app:summary="Controls the height of songs in the Library/Browse view. Decrease to fit 7+ songs." />
         <EditTextPreference app:key="dimen/car_ui_list_item_icon_container_width" app:title="car_ui_list_item_icon_container_width" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_icon_size" app:title="car_ui_list_item_icon_size" app:defaultValue="" app:useSimpleSummaryProvider="true" />
         <EditTextPreference app:key="dimen/car_ui_list_item_radio_button_end_inset" app:title="car_ui_list_item_radio_button_end_inset" app:defaultValue="" app:useSimpleSummaryProvider="true" />
