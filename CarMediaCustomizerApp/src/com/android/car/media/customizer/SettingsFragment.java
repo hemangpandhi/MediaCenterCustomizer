@@ -86,6 +86,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             OverlayManagerTransaction transaction = new OverlayManagerTransaction.Builder()
                     .registerFabricatedOverlay(overlayApp)
                     .registerFabricatedOverlay(overlayUi)
+                    .setEnabled(overlayApp.getIdentifier(), true)
+                    .setEnabled(overlayUi.getIdentifier(), true)
                     .build();
             overlayManager.commit(transaction);
         }
