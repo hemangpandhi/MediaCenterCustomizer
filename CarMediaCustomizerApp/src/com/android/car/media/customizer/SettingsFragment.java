@@ -96,14 +96,30 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     public void filterPreferences(String query) {
         androidx.preference.PreferenceScreen screen = getPreferenceScreen();
         if (screen == null) return;
-        
         String lowerQuery = query != null ? query.toLowerCase() : "";
-        for (int i = 0; i < screen.getPreferenceCount(); i++) {
-            androidx.preference.Preference pref = screen.getPreference(i);
-            CharSequence title = pref.getTitle();
-            if (title != null) {
-                pref.setVisible(title.toString().toLowerCase().contains(lowerQuery));
+        filterRecursively(screen, lowerQuery);
+    }
+
+    private boolean filterRecursively(androidx.preference.PreferenceGroup group, String query) {
+        boolean groupHasVisibleChild = false;
+        for (int i = 0; i < group.getPreferenceCount(); i++) {
+            androidx.preference.Preference pref = group.getPreference(i);
+            if (pref instanceof androidx.preference.PreferenceGroup) {
+                boolean hasVisible = filterRecursively((androidx.preference.PreferenceGroup) pref, query);
+                pref.setVisible(hasVisible);
+                if (hasVisible) groupHasVisibleChild = true;
+            } else {
+                boolean match = false;
+                if (pref.getTitle() != null && pref.getTitle().toString().toLowerCase().contains(query)) {
+                    match = true;
+                }
+                if (pref.getSummary() != null && pref.getSummary().toString().toLowerCase().contains(query)) {
+                    match = true;
+                }
+                pref.setVisible(match);
+                if (match) groupHasVisibleChild = true;
             }
         }
+        return groupHasVisibleChild;
     }
 }
