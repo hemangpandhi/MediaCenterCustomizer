@@ -39,7 +39,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     }
 
     private void applyOverlay(SharedPreferences prefs) {
-        FabricatedOverlay overlay = new FabricatedOverlay(OVERLAY_NAME, TARGET_PACKAGE);
+        FabricatedOverlay overlayApp = new FabricatedOverlay.Builder(requireContext().getPackageName(), OVERLAY_NAME + "_app", TARGET_PACKAGE).setTargetOverlayable("CarMediaApp").build();
+        FabricatedOverlay overlayUi = new FabricatedOverlay.Builder(requireContext().getPackageName(), OVERLAY_NAME + "_ui", TARGET_PACKAGE).setTargetOverlayable("car-ui-lib").build();
         
         Map<String, ?> allEntries = prefs.getAll();
         for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
@@ -47,31 +48,32 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             Object value = entry.getValue();
             if (value == null) continue;
             
+            FabricatedOverlay targetOverlay = key.contains("car_ui_") ? overlayUi : overlayApp;
             try {
                 if (key.startsWith("bool/")) {
                     boolean b = (Boolean) value;
-                    overlay.setResourceValue(key, TypedValue.TYPE_INT_BOOLEAN, b ? 1 : 0, null);
+                    targetOverlay.setResourceValue(key, TypedValue.TYPE_INT_BOOLEAN, b ? 1 : 0, null);
                 } else if (key.startsWith("color/")) {
                     String colorStr = (String) value;
                     if (colorStr != null && !colorStr.trim().isEmpty() && colorStr.startsWith("#")) {
-                        overlay.setResourceValue(key, TypedValue.TYPE_INT_COLOR_ARGB8, Color.parseColor(colorStr.trim()), null);
+                        targetOverlay.setResourceValue(key, TypedValue.TYPE_INT_COLOR_ARGB8, Color.parseColor(colorStr.trim()), null);
                     }
                 } else if (key.startsWith("dimen/")) {
                     String dimenStr = (String) value;
                     if (dimenStr != null && !dimenStr.trim().isEmpty()) {
                         float f = Float.parseFloat(dimenStr.trim());
-                        overlay.setResourceValue(key, f, TypedValue.COMPLEX_UNIT_DIP, null);
+                        targetOverlay.setResourceValue(key, f, TypedValue.COMPLEX_UNIT_DIP, null);
                     }
                 } else if (key.startsWith("integer/")) {
                     String intStr = (String) value;
                     if (intStr != null && !intStr.trim().isEmpty()) {
                         int i = Integer.parseInt(intStr.trim());
-                        overlay.setResourceValue(key, TypedValue.TYPE_INT_DEC, i, null);
+                        targetOverlay.setResourceValue(key, TypedValue.TYPE_INT_DEC, i, null);
                     }
                 } else if (key.startsWith("string/")) {
                     String str = (String) value;
                     if (str != null && !str.trim().isEmpty()) {
-                        overlay.setResourceValue(key, TypedValue.TYPE_STRING, str, null);
+                        targetOverlay.setResourceValue(key, TypedValue.TYPE_STRING, str, null);
                     }
                 }
             } catch (Exception e) {
@@ -82,7 +84,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         OverlayManager overlayManager = requireContext().getSystemService(OverlayManager.class);
         if (overlayManager != null) {
             OverlayManagerTransaction transaction = new OverlayManagerTransaction.Builder()
-                    .registerFabricatedOverlay(overlay)
+                    .registerFabricatedOverlay(overlayApp)
+                    .registerFabricatedOverlay(overlayUi)
                     .build();
             overlayManager.commit(transaction);
         }
