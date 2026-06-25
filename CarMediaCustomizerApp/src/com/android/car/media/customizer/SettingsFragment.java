@@ -92,4 +92,18 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             overlayManager.commit(transaction);
         }
     }
+
+    public void filterPreferences(String query) {
+        androidx.preference.PreferenceScreen screen = getPreferenceScreen();
+        if (screen == null) return;
+        
+        String lowerQuery = query != null ? query.toLowerCase() : "";
+        for (int i = 0; i < screen.getPreferenceCount(); i++) {
+            androidx.preference.Preference pref = screen.getPreference(i);
+            CharSequence title = pref.getTitle();
+            if (title != null) {
+                pref.setVisible(title.toString().toLowerCase().contains(lowerQuery));
+            }
+        }
+    }
 }

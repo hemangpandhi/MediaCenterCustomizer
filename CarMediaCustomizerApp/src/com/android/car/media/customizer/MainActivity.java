@@ -16,10 +16,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(getResources().getIdentifier("activity_main", "layout", getPackageName()));
 
+        SettingsFragment settingsFragment = new SettingsFragment();
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(getResources().getIdentifier("settings_container", "id", getPackageName()), new SettingsFragment())
+                .replace(getResources().getIdentifier("settings_container", "id", getPackageName()), settingsFragment)
                 .commit();
+
+        android.widget.EditText searchBar = findViewById(getResources().getIdentifier("search_bar", "id", getPackageName()));
+        if (searchBar != null) {
+            searchBar.addTextChangedListener(new android.text.TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    settingsFragment.filterPreferences(s.toString());
+                }
+
+                @Override
+                public void afterTextChanged(android.text.Editable s) {}
+            });
+        }
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
@@ -90,6 +107,36 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Exported to /sdcard/Download/Media_RRO_Export.xml", Toast.LENGTH_LONG).show();
             } catch (Exception e) {
                 Toast.makeText(this, "Export failed: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        findViewById(getResources().getIdentifier("btn_enable_rro", "id", getPackageName())).setOnClickListener(v -> {
+            try {
+                android.content.om.OverlayManager om = getSystemService(android.content.om.OverlayManager.class);
+                if (om != null) {
+                    android.content.om.OverlayManagerTransaction transaction = new android.content.om.OverlayManagerTransaction.Builder()
+                            .setEnabled(new android.content.om.OverlayIdentifier("com.android.car.media.rro"), true, android.os.UserHandle.myUserId())
+                            .build();
+                    om.commit(transaction);
+                    Toast.makeText(this, "Static Layout RRO Enabled!", Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Toast.makeText(this, "Failed to enable RRO: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        findViewById(getResources().getIdentifier("btn_disable_rro", "id", getPackageName())).setOnClickListener(v -> {
+            try {
+                android.content.om.OverlayManager om = getSystemService(android.content.om.OverlayManager.class);
+                if (om != null) {
+                    android.content.om.OverlayManagerTransaction transaction = new android.content.om.OverlayManagerTransaction.Builder()
+                            .setEnabled(new android.content.om.OverlayIdentifier("com.android.car.media.rro"), false, android.os.UserHandle.myUserId())
+                            .build();
+                    om.commit(transaction);
+                    Toast.makeText(this, "Static Layout RRO Disabled!", Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Toast.makeText(this, "Failed to disable RRO: " + e.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
