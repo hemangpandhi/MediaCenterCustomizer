@@ -2,11 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.car.media.customizer">
 
+    <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="34" />
     <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES" />
 
     <application
         android:label="Media Customizer"
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:theme="@style/Theme.AppCompat">
         <activity
             android:name=".MainActivity"
             android:exported="true">

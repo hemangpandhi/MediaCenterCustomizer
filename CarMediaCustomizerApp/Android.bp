@@ -13,4 +13,6 @@ android_app {
         "androidx.appcompat_appcompat",
         "androidx.preference_preference",
     ],
+    min_sdk_version: "34",
+    target_sdk_version: "34",
 }
